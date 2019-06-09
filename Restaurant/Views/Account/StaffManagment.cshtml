@@ -1,0 +1,35 @@
+﻿<script id="staffTmpl" type="text/x-jquery-tmpl">
+    <tr id="${Id}">
+        <td>${FirstName}</td>
+        <td>${LastName}</td>
+        <td>${Email}</td>
+        <td>${PhoneNumber}</td>
+        <td>${Role}</td>
+        <td>${Salary} UAH</td>
+    </tr>
+</script>
+
+<div class="row">
+    <div class="col-md-12">
+        <h3>Staff</h3>
+        <div class="text-right" style="margin-bottom: 10px">
+            <button type="button" class="btn btn-primary" id="btnAddAcc" from="Staff">Add New Acoount</button>
+            <button type="button" class="btn btn-primary" id="btnDeleteAcc">Delete Acoount</button>
+        </div>
+        <table class="table bg-info">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Role</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody id="StaffTable"></tbody>
+        </table>
+    </div>
+</div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundle/admin")
